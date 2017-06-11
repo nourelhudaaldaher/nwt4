@@ -9,3 +9,5 @@ Server - ASP.NET Web API 2, Repository and Unit of Work patterns, Code first mig
 ## Installation
 
 Client - fetch dependencies with *npm install*. Open index.html file (with server running) or build client with *npm run build-prod* or *npm run build-dev* when using Webpack server.
+
+Server - open .sln file with Visual Studio and build project. Dependencies will be automatically fetched.
