@@ -1,0 +1,132 @@
+#container {
+        width: 300px;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+#title {
+	color: purple;
+	width: 300px;
+	text-align: center;
+	margin-bottom: 0px;
+	}
+
+.a-style {
+	color: purple;
+	text-decoration: none;
+}
+
+.hidden { display:none; }
+
+.clearBoth{
+	clear: both;
+}
+
+
+
+
+
+.width-80{
+	width:80%;
+}
+
+.image{
+	width:70%;
+	margin:auto;
+}
+
+
+
+
+
+/*animations//////////////////////////////////////////////*/
+
+.item-enter{
+    animation: slideIn 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.item-leave{ 
+    animation: slideOut 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+@keyframes slideIn {
+    0%  {
+	        transform: translate3d(-50px, 0, 0);
+    	}
+    100%{
+        transform: translate3d(0, 0, 0);
+    	}
+    }
+
+ @keyframes slideOut {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(50px, 0, 0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 60px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0); 
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 10px, 0); 
+    }
+}
+
+
+.route-enter, .route-appear{
+	opacity: 0;
+	animation: slideIn 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+}
+    
+     
+
+.route-leave{
+	animation: slideOut 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: 1.0
+}
+    
+    
+.route-appear{
+    opacity: 0;
+    animation: slideUp 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+}
+
+
+
+
+.filter-enter, .filter-appear{
+  animation: slideDown 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+}
+    
+     
+
+.filter-leave{
+  animation: slideUp 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+    
+    
+.filter-appear{
+    animation: slideDown 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
+}
+
+* { box-sizing: border-box; }
+
+/*end animations//////////////////////////////////////////////*/
